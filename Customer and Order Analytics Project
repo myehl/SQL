@@ -1,7 +1,7 @@
 /* #In this SQL, I'm querying a database with multiple tables in it to quantify statistics about customer and order data. */
 
 
-1.) How many orders were placed in January? 
+1. How many orders were placed in January? 
 
 SELECT COUNT(orderid)
 FROM BIT_DB.JanSales
@@ -9,7 +9,7 @@ WHERE length(orderid) = 6
 AND orderid <> 'ORDER ID';
 
 
-2.) How many of those orders were for an iPhone?
+2. How many of those orders were for an iPhone?
 
 SELECT COUNT(orderid)
 FROM BIT_DB.JanSales
@@ -17,7 +17,7 @@ WHERE product = 'iPhone' AND
 length(orderid) = 6
 AND orderid <> 'ORDER ID';
 
-3.) Select the customer account numbers for all the orders that were placed in February. 
+3. Select the customer account numbers for all the orders that were placed in February. 
 
 SELECT DISTINCT acctnum 
 FROM BIT_DB.customers cust
